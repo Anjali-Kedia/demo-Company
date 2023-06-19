@@ -1,5 +1,7 @@
 # Demo-Company
 
+Created using ReactJS and Tailwind CSS
+
 Responsive demo project with working filter tags.
 
 ## Available Scripts
