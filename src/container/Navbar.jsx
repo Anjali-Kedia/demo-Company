@@ -1,6 +1,7 @@
 import React from 'react'
 
 import demo from '../images/DemoCompany.png'
+import demoComp from '../images/DemoCompany.svg'
 import {RiSettings3Fill} from 'react-icons/ri';
 import {LuBellDot} from 'react-icons/lu'
 
@@ -8,10 +9,11 @@ const Navbar = () => {
   return (
     
 <nav className="bg-[#1D1F25] border-b border-[#FFFFFF] border-opacity-10 dark:bg-[#1D1F25]">
-  
+  <div className='flex flex-wrap'>
   <div className="max-w-screen-xl flex flex-wrap items-center  ">
   <a href="https://anjali-kedia.github.io/WebPortfolio/" className="flex items-center">
-      <img src={demo} className="h-8 m-8 " alt="Demo Company" />
+      <img src={demoComp} className="h-8 m-8 " alt="Demo Company" />
+      
       
   </a>
   <ul className="flex flex-col ml-8 text-sm font-one p-4 md:p-0 mt-4 border text-[#FFFFFF]  border-gray-100   md:flex-row md:space-x-8 md:mt-0 md:border-0 ">
@@ -31,6 +33,7 @@ const Navbar = () => {
         <a href="#" className="block py-2 pl-3 pr-4 text-[#FFBB29]  hover:text-[#FFBB29]  md:p-0 "aria-current="page">Blog</a>
       </li>
     </ul>
+    </div>
 
   <div className='flex items-center ml-auto gap-12'>
   <RiSettings3Fill className='text-white text-opacity-50'/>
